@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1><a href="/">Tierra Compartida</a></h1>
+</header>
+
+<main class="post-container">
+  <h1>{{ page.title }}</h1>
+  <p class="date">{{ page.date | date: "%d %B %Y" }}</p>
+
+  <img src="{{ page.image }}" class="post-cover">
+
+  <div class="content">
+    {{ content }}
+  </div>
+</main>
+
+</body>
+</html>
 
