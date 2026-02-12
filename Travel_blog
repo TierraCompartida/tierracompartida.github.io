@@ -4,87 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eco Travel Blog</title>
-
-<style>
-body {
-  font-family: Arial;
-  margin:0;
-  background:#f4f7f4;
-  color:#2c3e2c;
-}
-
-header {
-  background:#2f6f4f;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-nav {
-  background:#1f4d36;
-  padding:10px;
-  text-align:center;
-}
-
-nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-}
-
-.container {
-  max-width:900px;
-  margin:auto;
-  padding:20px;
-}
-
-.post {
-  background:white;
-  padding:20px;
-  margin-bottom:20px;
-  border-radius:10px;
-}
-
-footer {
-  background:#2f6f4f;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>🌿 Eco Travel Blog</h1>
-<p>Viaggi sostenibili nel mondo</p>
+<h1>🌍 Tierra Compartida Blog</h1>
+<p>Viaggi sostenibili • Comunità • Natura</p>
 </header>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Destinazioni</a>
-<a href="#">Consigli Eco</a>
-<a href="#">Chi sono</a>
-</nav>
 
 <div class="container">
 
-<div class="post">
-<h2>Viaggio sostenibile in Islanda</h2>
-<p>Guida eco-friendly per esplorare l’Islanda riducendo l’impatto ambientale.</p>
-</div>
+<a class="post" href="post1.html">
+<h2>Viaggiare sostenibile</h2>
+<p>Guida eco per backpacker</p>
+</a>
 
-<div class="post">
-<h2>Come viaggiare senza plastica</h2>
-<p>Consigli per ridurre rifiuti durante i viaggi.</p>
-</div>
+<a class="post" href="post2.html">
+<h2>Destinazioni eco 2026</h2>
+<p>Luoghi sostenibili</p>
+</a>
 
 </div>
-
-<footer>
-<p>© 2026 Eco Travel Blog</p>
-</footer>
 
 </body>
 </html>
