@@ -5,6 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog | Tierra Compartida</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  /* Box autore */
+  .author-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    background-color: #f0f0f0; /* sfondo leggero */
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .author-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .author-name {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  /* Stile generale articoli */
+  .posts article {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .article-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+</style>
 </head>
 
 <body>
@@ -26,29 +63,17 @@
     </div>
     <h2>Cada lugar es un hogar</h2>
     <p>Del turismo de masa a la exploración consciente</p>
+
+    <!-- Box profilo autore -->
+    <div class="author-box">
+      <img class="author-photo" src="INSERIRE PATH FOTO" alt="Foto autore">
+      <p class="author-name">By Maria Rossi</p>
+    </div>
+
     <a href="post1.html">Leggi</a>
   </article>
 
   <!-- Articolo 2 -->
   <article>
     <div class="article-photo">
-      <img src="https://raw.githubusercontent.com/TUONOME/tierra-compartida/main/blog/images/filipinas.jpg" alt="Donde comer - Filipinas">
-    </div>
-    <h2>Donde comer - Filipinas</h2>
-    <p>Comida local de Filipinas</p>
-    <a href="post2.html">Leggi</a>
-  </article>
-
-</section>
-
-<!-- Sezione documenti -->
-<section id="documenti">
-  <h2>Documenti utili</h2>
-  <ul>
-    <li><a class="doc-link" href="docs/Guida_Palawan.docx" target="_blank">Guida Palawan (.docx)</a></li>
-    <li><a class="doc-link" href="docs/Itinerario_Filipinas.docx" target="_blank">Itinerario Filippine (.docx)</a></li>
-  </ul>
-</section>
-
-</body>
-</html>
+      <img src="https://raw.githubuserconte
