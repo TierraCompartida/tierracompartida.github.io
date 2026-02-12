@@ -18,6 +18,11 @@ header h1 a{
     text-decoration: none;
 }
 
+header p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 /* Sezione articoli */
 .posts{
     display: grid;
@@ -32,27 +37,35 @@ article{
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover{
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
 /* Quadrante foto */
 .article-photo{
     width: 100%;
-    max-height: 250px;       /* altezza del quadrante */
+    max-height: 250px;       /* altezza fissa del quadrante */
     overflow: hidden;
-    border-radius: 16px;
 }
 
 .article-photo img{
     width: 100%;
     height: 100%;
-    object-fit: cover;       /* riempie il quadrante senza deformare l'immagine */
+    object-fit: cover;
     display: block;
 }
 
 /* Titolo articolo */
 article h2{
     padding: 15px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* Paragrafo articolo */
@@ -60,9 +73,10 @@ article p{
     padding: 0 15px 15px;
     font-size: 16px;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
-/* Link all'articolo o documenti */
+/* Link articolo */
 article a{
     display: block;
     background: #0f5132;
@@ -71,6 +85,7 @@ article a{
     padding: 12px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 0 0 16px 16px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -102,7 +117,7 @@ article a:hover{
     margin: 10px 0;
 }
 
-#documenti ul li a{
+#documenti ul li a.doc-link{
     display: inline-block;
     background: #0f5132;
     color: white;
@@ -112,7 +127,7 @@ article a:hover{
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#documenti ul li a:hover{
+#documenti ul li a.doc-link:hover{
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
