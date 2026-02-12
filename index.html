@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tierra Compartida</title>
 
-<!-- ICONS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
@@ -38,7 +37,6 @@ body{
     box-shadow:0 20px 60px rgba(0,0,0,0.35);
 }
 
-/* FOTO */
 .profile{
     width:130px;
     height:130px;
@@ -59,7 +57,6 @@ h1{
     margin-bottom:30px;
 }
 
-/* LINK BASE */
 .link{
     display:flex;
     align-items:center;
@@ -81,7 +78,6 @@ h1{
     font-size:20px;
 }
 
-/* animazione entrata */
 @keyframes linkIn{
     to{
         transform:translateY(0);
@@ -93,6 +89,7 @@ h1{
 .link:nth-child(4){animation-delay:.1s;}
 .link:nth-child(5){animation-delay:.25s;}
 .link:nth-child(6){animation-delay:.4s;}
+.link:nth-child(7){animation-delay:.55s;}  /* blog */
 
 /* INSTAGRAM */
 .instagram{
@@ -121,14 +118,14 @@ h1{
     transform:scale(1.06);
 }
 
+/* BLOG */
 .blog{
-    background: linear-gradient(45deg,#fd1d1d,#fcb045,#833ab4);
+    background: linear-gradient(45deg,#00c9a7,#2b86c5);
 }
 .blog:hover{
     transform:scale(1.06);
     box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
-    
 </style>
 </head>
 
@@ -153,12 +150,13 @@ h1{
 <i class="fa-brands fa-youtube"></i> YouTube
 </a>
 
-<a class="link" href="blog">
-🌍 Nuestros viajes
+<!-- BLOG COME GLI ALTRI -->
+<a class="link blog" href="blog/index.html">
+<i class="fa-solid fa-earth-americas"></i> Blog de viajes
 </a>
-
 
 </div>
 
 </body>
 </html>
+
